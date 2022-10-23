@@ -12,7 +12,7 @@ export const SearchPage = () => {
     const showSearch = q === "";
     const showError = heroes.length === 0 && !showSearch;
 
-    const { searchText, onInputChange, onResetForm } = useForm({
+    const { searchText, onInputChange } = useForm({
         searchText: q,
     });
 
